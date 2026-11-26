@@ -1702,3 +1702,22 @@ body{background:#F5F2EA;color:#292E29}
   text-decoration:underline;
   text-underline-offset:2px;
 }
+
+
+/* Contextual line icons for the three visitor experience themes. */
+.experience-icon{
+  width:42px;
+  height:42px;
+  color:#486A55;
+  border-color:#C9D1C4;
+  background:rgba(255,255,255,.22);
+}
+.experience-icon svg{
+  display:block;
+  width:21px;
+  height:21px;
+}
+@media(max-width:760px){
+  .experience-icon{width:38px;height:38px}
+  .experience-icon svg{width:19px;height:19px}
+}
