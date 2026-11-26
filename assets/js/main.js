@@ -1,19 +1,40 @@
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".main-nav");
 
+function setNavigationOpen(isOpen, restoreFocus = false) {
+  if (!menuButton || !navigation) return;
+  navigation.classList.toggle("open", isOpen);
+  document.body.classList.toggle("menu-open", isOpen);
+  menuButton.setAttribute("aria-expanded", String(isOpen));
+  menuButton.setAttribute("aria-label", isOpen ? "Tutup menu" : "Buka menu");
+  if (!isOpen && restoreFocus) menuButton.focus();
+}
+
 if (menuButton && navigation) {
   menuButton.addEventListener("click", () => {
-    const isOpen = navigation.classList.toggle("open");
-    menuButton.setAttribute("aria-expanded", String(isOpen));
-    menuButton.setAttribute("aria-label", isOpen ? "Tutup menu" : "Buka menu");
+    const isOpen = menuButton.getAttribute("aria-expanded") !== "true";
+    setNavigationOpen(isOpen);
   });
 
   navigation.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navigation.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", "Buka menu");
-    });
+    link.addEventListener("click", () => setNavigationOpen(false));
+  });
+
+  // The unused lower area of the full-screen menu acts as its backdrop.
+  navigation.addEventListener("click", (event) => {
+    if (event.target === navigation) setNavigationOpen(false);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+      setNavigationOpen(false, true);
+    }
+  });
+
+  // Avoid leaving the page scroll-locked when a device is rotated to desktop width.
+  const desktopLayout = window.matchMedia("(min-width: 821px)");
+  desktopLayout.addEventListener("change", (event) => {
+    if (event.matches) setNavigationOpen(false);
   });
 }
 
