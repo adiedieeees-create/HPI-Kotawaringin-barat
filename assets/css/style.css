@@ -1906,3 +1906,19 @@ body{background:#F5F2EA;color:#292E29}
   min-height:42px;
   padding:12px 19px!important;
 }
+
+
+/* SITE-WIDE BATIK BACKGROUND — subtle watermark, preserving existing layouts and section colors. */
+body{
+  background-color:#FAF7F5;
+  background-image:
+    linear-gradient(rgba(250,247,245,.86),rgba(250,247,245,.86)),
+    url("/HPI-Kotawaringin-barat/assets/file_00000000fb348211b4c1a53e69a78172.png");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+@media(max-width:680px){
+  body{background-attachment:scroll}
+}
