@@ -1721,3 +1721,40 @@ body{background:#F5F2EA;color:#292E29}
   .experience-icon{width:38px;height:38px}
   .experience-icon svg{width:19px;height:19px}
 }
+
+
+/* FINAL ICON OVERRIDE — clear pictograms, not numbered placeholders. */
+.experience-item .experience-icon{
+  width:46px!important;
+  height:46px!important;
+  flex:0 0 46px!important;
+  display:grid!important;
+  place-items:center!important;
+  border:1px solid #AAB9A5!important;
+  border-radius:50%!important;
+  background:#E5EAE0!important;
+  color:#294638!important;
+}
+.experience-item .experience-icon svg{
+  display:block!important;
+  width:25px!important;
+  height:25px!important;
+  opacity:1!important;
+  stroke:#294638!important;
+  stroke-width:1.8!important;
+}
+.experience-item .experience-icon svg path,
+.experience-item .experience-icon svg circle{
+  vector-effect:non-scaling-stroke;
+}
+@media(max-width:760px){
+  .experience-item .experience-icon{
+    width:42px!important;
+    height:42px!important;
+    flex-basis:42px!important;
+  }
+  .experience-item .experience-icon svg{
+    width:23px!important;
+    height:23px!important;
+  }
+}
