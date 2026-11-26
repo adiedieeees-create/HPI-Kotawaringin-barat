@@ -1868,3 +1868,41 @@ body{background:#F5F2EA;color:#292E29}
   .hero-actions .button{padding-inline:22px!important}
   .filter-button{min-height:38px;padding:9px 15px!important}
 }
+
+
+/* TRANSPARENT BUTTON FINISH — subtle outline with the page showing through. */
+.button,
+.main-nav .nav-contact{
+  background:transparent!important;
+  color:inherit!important;
+  border:1px solid currentColor!important;
+  box-shadow:none!important;
+  backdrop-filter:blur(3px);
+}
+.button-primary,
+.button-dark,
+.main-nav .nav-contact{
+  color:#355548!important;
+  border-color:rgba(53,85,72,.62)!important;
+}
+.button-outline{
+  color:#F8F7F1!important;
+  border-color:rgba(248,247,241,.78)!important;
+}
+.button:hover,
+.main-nav .nav-contact:hover{
+  background:rgba(53,85,72,.09)!important;
+  color:#294638!important;
+  border-color:#355548!important;
+  box-shadow:none!important;
+  transform:translateY(-1px);
+}
+.button-outline:hover{
+  background:rgba(248,247,241,.12)!important;
+  color:#FFFFFF!important;
+  border-color:#FFFFFF!important;
+}
+.main-nav .nav-contact{
+  min-height:42px;
+  padding:12px 19px!important;
+}
