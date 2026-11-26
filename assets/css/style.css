@@ -1097,3 +1097,162 @@ body{background:var(--cream);color:var(--ink);font-family:var(--sans)}
   .focus-panel:first-child,
   .focus-panel:not(:first-child) { flex-basis: 89%; width: 89%; }
 }
+
+
+/* HPI calm natural palette — softer contrast, muted accents, warmer reading surfaces */
+:root{
+  --wine:#355548;
+  --wine-light:#71846F;
+  --wine-dark:#213A30;
+  --rose:#DCE5DA;
+  --champagne:#A88E65;
+  --forest:#2D4B3E;
+  --forest2:#71846F;
+  --lime:#DCE5DA;
+  --cream:#F5F2EA;
+  --ink:#292E29;
+  --muted:#716F66;
+  --line:#DCDDD3;
+}
+body{background:#F5F2EA;color:#292E29}
+.announcement{background:#263F34;color:#E7EADF}
+.site-header{background:rgba(245,242,234,.97);border-bottom-color:#DCDDD3}
+.brand-mark,.footer-brand .brand-mark{background:#355548;border-color:#355548;color:#F7F5EE}
+.brand-copy strong{color:#294638}
+.main-nav>a{color:#4E5B50}
+.main-nav>a:hover,.main-nav a.active:not(.nav-contact){color:#60785E}
+.main-nav .nav-contact,.button-dark,.button-primary{background:#355548;color:#F8F7F1}
+.nav-contact span{color:#DCE5DA}
+.menu-toggle{border-color:#D5D9CF}
+.menu-toggle span{background:#355548}
+.hero{background-color:#F5F2EA!important}
+.hero:after{color:rgba(53,85,72,.6)}
+.hero-content:before,.hero .eyebrow,.eyebrow,.section-number,.about-kicker .section-number{color:#60785E}
+.hero h1,.intro h2,.section-heading h2,.join-banner h2,.guide-copy h2,.contact-heading h2,
+.page-hero h1,.directory-heading h2,.about-intro h2,.about-copy h2,.organization-note h2,
+.guide-intro h2,.directory-placeholder h2{color:#263E33}
+.hero h1 em,.intro h2 em,.section-heading h2 em,.guide-copy h2 em,
+.contact h2 em,.directory-heading h2 em,.about-intro h2 em,.about-copy h2 em,
+.organization-note h2 em,.guide-intro h2 em,.directory-placeholder h2 em,
+.experience-title h2 em{color:#71846F}
+.hero-description,.intro-bottom p,.heading-note,.guide-copy>p:not(.eyebrow),
+.about-lead,.about-copy>p:not(.eyebrow),.organization-note p:not(.eyebrow),
+.guide-intro>p,.directory-placeholder>div:last-child>p:not(.eyebrow),
+.directory-card p,.directory-notice p,.faq-list details p{color:#666A60}
+.caption-line,.vertical-rule{background:#A88E65}
+.hero-caption,.hero-index,.muted{color:#72746B}
+.hero-index strong{color:#60785E}
+.hero-index span{color:#A88E65}
+.destinations,.experience-strip,.directory-section,.field-focus,.faq-section{background:#EBEAE1}
+.field-stories,.about-two-col,.about-intro,.guide-intro{background:#F5F2EA}
+.section-link-row,.content-note{color:#6F7168}
+.section-link-row .text-link,.text-link,.contact-email{color:#486A55}
+.destination-card,.focus-panel{background:#263F34}
+.destination-card:after{background:linear-gradient(0deg,rgba(25,43,34,.88),rgba(25,43,34,.02) 76%)}
+.card-tag,.focus-index{color:#E1E7DA}
+.card-overlay a span,.focus-action b{color:#D5C49F}
+.services,.values-section,.guide-benefits{background:#263F34;color:#F6F4EC}
+.services:before{color:rgba(231,234,220,.045)}
+.light-heading h2{color:#F6F4EC}
+.light-heading h2 em,.light-heading .eyebrow{color:#DCE5DA}
+.light-heading .heading-note,.service-footnote{color:rgba(242,243,233,.68)}
+.service-list article{border-color:rgba(229,235,222,.22)}
+.service-no,.service-arrow,.values-grid article>span,.benefit-grid span{color:#D0C19D}
+.values-grid h3,.benefit-grid h3{color:#F8F6EF}
+.values-grid p,.benefit-grid p{color:rgba(242,243,233,.72)}
+.service-arrow{color:#DCE5DA}
+.guide-image:after{background:#60785E;color:#F8F6EF}
+.image-note{background:#F5F2EA;color:#355548}
+.guide-points span,.guide-points b{color:#526B55}
+.join-banner{background:#657961;border-top-color:#B8A47B}
+.join-banner h2,.join-banner .eyebrow{color:#FBF8F0}
+.join-banner h2 em{color:#E1E8DA}
+.button-outline{border-color:rgba(248,248,238,.8);color:#fff}
+.contact{background:#EEECE3}
+.contact-panel{background:#F9F7F0;border-top-color:#60785E;box-shadow:0 16px 42px rgba(36,55,43,.06)}
+.contact-kicker{color:#60785E}
+.contact-panel h3{color:#263E33}
+.contact-divider,.contact-email{border-color:#DCDDD3}
+.small-note,.contact-panel .small-note{color:#77786D}
+.site-footer{background:#20382F;border-top-color:rgba(235,238,225,.12)}
+.site-footer>p{color:#DCE5DA}
+.footer-brand .brand-copy strong{color:#F8F6EF}
+.footer-brand .brand-copy small,.copyright{color:rgba(242,243,233,.65)}
+.page-hero{
+  background-color:#263F34!important;
+}
+.page-hero-shade{background:linear-gradient(90deg,rgba(31,57,45,.91),rgba(39,68,54,.56))}
+.page-hero h1 em,.breadcrumb a,.page-hero .eyebrow{color:#E0E7D9}
+.page-hero-content>p:not(.eyebrow),.breadcrumb{color:rgba(248,247,238,.82)}
+.page-hero:after{color:rgba(236,240,226,.22)}
+.destination-hero{
+  background-image:linear-gradient(90deg,rgba(31,57,45,.88),rgba(39,68,54,.35)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;
+}
+.about-hero{
+  background-image:linear-gradient(90deg,rgba(31,57,45,.89),rgba(39,68,54,.4)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/ASTANA-MANGKUBUMI-by-Raymond-L.jpg")!important;
+}
+.guide-hero{
+  background-image:linear-gradient(90deg,rgba(31,57,45,.9),rgba(39,68,54,.4)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;
+}
+.directory-heading h2 em,.about-intro h2 em,.about-copy h2 em,.organization-note h2 em,
+.guide-intro h2 em,.directory-placeholder h2 em{color:#71846F}
+.search-box{border-color:#D5D8CE;background:#F9F7F0;color:#60785E}
+.search-box input{color:#292E29}
+.filter-button{border-color:#C9CEC2;background:#F2F0E8;color:#4D5B4F}
+.filter-button.active,.filter-button:hover{background:#486A55;border-color:#486A55;color:#F9F7F0}
+.directory-grid{border-color:#D2D5CA}
+.directory-card,.directory-card:nth-child(even){border-color:#D2D5CA}
+.directory-meta,.directory-card-footer a{color:#486A55}
+.directory-card h3{color:#263E33}
+.directory-card-footer{border-color:#DCDDD3}
+.image-category{background:#DCE5DA;color:#2C493B}
+.directory-notice{background:#E5E8DE;border-left-color:#71846F}
+.directory-notice strong{color:#263E33}
+.directory-notice p,.directory-notice a{color:#596458}
+.values-grid article,.benefit-grid article{border-color:rgba(229,235,222,.25)}
+.organization-note,.guide-checklist,.source-note{background:#E9E9DF}
+.organization-seal,.placeholder-icon{border-color:#A88E65;outline-color:#A88E65;color:#486A55}
+.placeholder-tags span{border-color:#CFD4C8;color:#486A55}
+.checklist p{border-color:#D4D7CC;color:#505B50}
+.checklist p span,.faq-list summary span{color:#71846F}
+.faq-list details,.faq-list details:last-child{border-color:#D5D8CE}
+.faq-list summary{color:#2D493B}
+.faq-list details p{color:#666A60}
+.source-note{color:#6D7167}
+.experience-icon{border-color:#C4CBBF;color:#60785E}
+.experience-item strong{color:#2D493B}
+.experience-item p{color:#666A60}
+.field-focus-head h2,.stories-heading h2{color:#263E33}
+.field-focus-head h2 em,.stories-heading h2 em{color:#71846F}
+.field-focus-head>p,.story-copy p,.story-list p{color:#666A60}
+.story-list{border-color:#D1D5C9}
+.story-list article{border-color:#D1D5C9}
+.story-meta,.story-read,.story-list article>a{color:#60785E}
+.story-copy h3,.story-list h3{color:#263E33}
+.story-copy h3 a:hover,.story-list h3 a:hover{color:#60785E}
+.story-photo{background:#DCE0D5}
+.focus-panel:after{background:linear-gradient(0deg,rgba(25,43,34,.85),rgba(25,43,34,.03) 72%)}
+.focus-index{color:#E3E9DC}
+.focus-action{border-color:rgba(240,243,230,.52)}
+.focus-action b{color:#D7C69F}
+.not-found{background:#F5F2EA}
+.not-found h1{color:#263E33}
+.not-found h1 em{color:#71846F}
+.not-found .button{background:#355548}
+:focus-visible{outline-color:#A88E65}
+::selection{background:#DCE5DA;color:#263E33}
+
+@media (max-width: 900px) {
+  .main-nav{background:linear-gradient(180deg,#F5F2EA 0,#F5F2EA 425px,rgba(32,56,47,.62) 425px,rgba(32,56,47,.62) 100%)}
+  .main-nav>a{color:#4D5B50;border-color:#DCDDD3}
+  .main-nav .nav-contact{background:#355548;color:#F9F7F0}
+  .hero-shade{background:linear-gradient(90deg,rgba(28,50,39,.88),rgba(35,57,44,.56)),linear-gradient(0deg,rgba(25,43,34,.5),transparent 70%)}
+  .hero h1{color:#F8F6EF}
+  .hero h1 em,.hero .eyebrow,.hero-content:before{color:#E0E7D9}
+  .hero-description{color:rgba(248,247,238,.86)}
+  .hero-caption,.hero-index{color:rgba(248,247,238,.8)}
+  .hero-index strong{color:#F8F6EF}
+  .caption-line{background:#DCE5DA}
+  .hero-actions .text-link,.light-link{color:#F8F6EF}
+  .focus-grid{scrollbar-color:#AAB7A5 transparent}
+}
