@@ -1661,3 +1661,27 @@ body{background:#F5F2EA;color:#292E29}
     align-self:center;
   }
 }
+
+
+/* Official HPI logo replaces the temporary directory emblem. */
+.directory-placeholder .placeholder-icon{
+  background:#FFFFFF;
+  padding:10px;
+  overflow:hidden;
+  border-color:#D8C5C9;
+  outline-color:#D8C5C9;
+}
+.directory-placeholder .placeholder-icon img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:50%;
+}
+@media(max-width:680px){
+  .directory-placeholder .placeholder-icon{
+    width:112px;
+    height:112px;
+    justify-self:center;
+  }
+}
