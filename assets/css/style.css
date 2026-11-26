@@ -1320,6 +1320,7 @@ body{background:#F5F2EA;color:#292E29}
 }
 .destination-large>img{display:none!important}
 .destination-large .card-overlay{display:none!important}
+.destination-large:after{display:none!important}
 @media(max-width:900px){
   .hero{
     background:#F5F2EA!important;
