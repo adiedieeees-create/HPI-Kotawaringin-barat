@@ -1937,3 +1937,31 @@ body{
     background-attachment:scroll!important;
   }
 }
+
+
+/* MOBILE FIXED BATIK LAYER — keep the pattern stationary while scrolling. */
+@media(max-width:680px){
+  html,body{min-height:100%}
+  body{
+    position:relative;
+    isolation:isolate;
+    background-image:none!important;
+    background-color:transparent!important;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+    background-color:#FAF7F5;
+    background-image:
+      linear-gradient(rgba(250,247,245,.76),rgba(250,247,245,.76)),
+      url("/HPI-Kotawaringin-barat/assets/file_00000000fb348211b4c1a53e69a78172.png");
+    background-repeat:repeat-y;
+    background-position:center top;
+    background-size:100% auto;
+    transform:translateZ(0);
+    will-change:transform;
+  }
+}
