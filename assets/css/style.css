@@ -162,3 +162,11 @@
  .directory-placeholder h2{font-size:40px}
  .checklist{margin:0}
 }
+
+/* Final polish */
+.hero{background-image:url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")}
+.guide-hero{background-image:url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")}
+.directory-card[hidden]{display:none}
+:focus-visible{outline:3px solid #b7c98e;outline-offset:3px}
+img{color:transparent}
+@media print{.announcement,.site-header,.site-footer,.join-banner{display:none}.page-hero{height:auto;min-height:280px}}
