@@ -589,7 +589,7 @@ body{background:var(--cream);color:var(--ink);font-family:var(--sans)}
   body.menu-open { overflow: hidden; }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   html { scroll-padding-top: 78px; }
   body { overflow-x: hidden; }
   .announcement {
