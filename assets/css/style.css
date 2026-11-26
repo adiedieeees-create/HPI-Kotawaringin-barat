@@ -1319,3 +1319,46 @@ body{background:#F5F2EA;color:#292E29}
     background:none!important;
   }
 }
+
+
+/* HPI HOMEPAGE BACKGROUND — uploaded combined emblem artwork */
+.hero{
+  background-color:#FAF7F5!important;
+  background-image:
+    linear-gradient(90deg,rgba(250,247,245,.94) 0%,rgba(250,247,245,.82) 43%,rgba(250,247,245,.12) 78%,rgba(250,247,245,.04) 100%),
+    url("/HPI-Kotawaringin-barat/assets/file_000000005d3c820780acd2ba43c7d582.png")!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-size:cover!important;
+  color:#263E33!important;
+}
+.hero:before,.hero::before,.hero:after,.hero::after,.hero-shade{
+  content:none!important;
+  display:none!important;
+  background:none!important;
+}
+.hero-content{position:relative;z-index:2}
+.hero h1{color:#263E33!important}
+.hero h1 em{color:#7B2435!important}
+.hero-content:before,.hero .eyebrow{color:#7B2435!important}
+.hero-description{color:#51494A!important}
+.hero .text-link,.hero .light-link{color:#54212F!important}
+.hero-caption,.hero-index{color:#51494A!important}
+.hero-index strong{color:#7B2435!important}
+.hero-index span{color:#9B3B4D!important}
+.caption-line{background:#B99762!important}
+@media(max-width:680px){
+  .hero{
+    background-image:
+      linear-gradient(180deg,rgba(250,247,245,.92) 0%,rgba(250,247,245,.82) 43%,rgba(250,247,245,.35) 100%),
+      url("/HPI-Kotawaringin-barat/assets/file_000000005d3c820780acd2ba43c7d582.png")!important;
+    background-position:center center!important;
+    background-size:cover!important;
+    color:#263E33!important;
+  }
+  .hero h1{color:#263E33!important}
+  .hero h1 em{color:#7B2435!important}
+  .hero-description{color:#51494A!important}
+  .hero .text-link,.hero .light-link{color:#54212F!important}
+  .hero-caption,.hero-index{color:#51494A!important}
+}
