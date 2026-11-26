@@ -1362,3 +1362,23 @@ body{background:#F5F2EA;color:#292E29}
   .hero .text-link,.hero .light-link{color:#54212F!important}
   .hero-caption,.hero-index{color:#51494A!important}
 }
+
+
+/* OFFICIAL HPI LOGO IN SITE HEADER */
+.site-header .brand-logo{
+  display:block;
+  flex:0 0 44px;
+  width:44px;
+  height:44px;
+  object-fit:contain;
+  object-position:center;
+  background:transparent;
+  border:0;
+}
+@media(max-width:680px){
+  .site-header .brand-logo{
+    flex-basis:39px;
+    width:39px;
+    height:39px;
+  }
+}
