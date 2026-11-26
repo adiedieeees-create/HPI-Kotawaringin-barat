@@ -1970,13 +1970,13 @@ body{
 /* BATIK BACKGROUND CONTRAST — keep the same motif, soften it behind page text. */
 body{
   background-image:
-    linear-gradient(rgba(250,247,245,.92),rgba(250,247,245,.92)),
+    linear-gradient(rgba(250,247,245,.84),rgba(250,247,245,.84)),
     url("/HPI-Kotawaringin-barat/assets/file_00000000fb348211b4c1a53e69a78172.png")!important;
 }
 @media(max-width:680px){
   body::before{
     background-image:
-      linear-gradient(rgba(250,247,245,.92),rgba(250,247,245,.92)),
+      linear-gradient(rgba(250,247,245,.84),rgba(250,247,245,.84)),
       url("/HPI-Kotawaringin-barat/assets/file_00000000fb348211b4c1a53e69a78172.png")!important;
   }
 }
