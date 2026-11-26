@@ -27,7 +27,7 @@
 .source-note{font-size:9px;line-height:1.7;color:#94878C;background:#F7EFF0;padding:15px 11%;margin:0}
 .page-hero{min-height:500px;height:58vh;max-height:680px;position:relative;display:flex;align-items:center;padding:0 11%;color:#fff;background-size:cover;background-position:center}
 .page-hero:before{content:"";position:absolute;inset:0;background:#54212F}
-.destination-hero{background-image:url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg");background-position:center 42%}
+.destination-hero{background-image:radial-gradient(circle at 72% 28%,rgba(168,142,101,.2),transparent 32%),linear-gradient(135deg,#DCE5DA 0%,#AAB9A4 54%,#71846F 100%);background-position:center 42%}
 .about-hero{background-image:url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/ASTANA-MANGKUBUMI-by-Raymond-L.jpg");background-position:center 50%}
 .guide-hero{background-image:url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/Orangutan-Tanjung-Puting.jpg")}
 .page-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,27,22,.85),rgba(6,27,22,.32))}
@@ -164,8 +164,8 @@
 }
 
 /* Final polish */
-.hero{background-image:url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")}
-.guide-hero{background-image:url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")}
+.hero{background-image:radial-gradient(circle at 72% 28%,rgba(168,142,101,.2),transparent 32%),linear-gradient(135deg,#DCE5DA 0%,#AAB9A4 54%,#71846F 100%)}
+.guide-hero{background-image:radial-gradient(circle at 72% 28%,rgba(168,142,101,.2),transparent 32%),linear-gradient(135deg,#DCE5DA 0%,#AAB9A4 54%,#71846F 100%)}
 .directory-card[hidden]{display:none}
 :focus-visible{outline:3px solid #E8C5C0;outline-offset:3px}
 img{color:transparent}
@@ -223,7 +223,7 @@ body{background:var(--cream);color:var(--ink);font-family:var(--sans)}
 .hero-shade{display:none}
 .hero:before{
   content:"";position:absolute;z-index:0;right:7%;top:58px;bottom:76px;width:43%;
-  background-image:linear-gradient(0deg,rgba(36,20,18,.28),rgba(36,20,18,.03)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg");
+  background-image:radial-gradient(circle at 72% 28%,rgba(168,142,101,.2),transparent 32%),linear-gradient(135deg,#DCE5DA 0%,#AAB9A4 54%,#71846F 100%);
   background-position:center;background-size:cover;
 }
 .hero:after{
@@ -468,9 +468,9 @@ body{background:var(--cream);color:var(--ink);font-family:var(--sans)}
 
 /* Photo treatment on inner-page mastheads */
 .page-hero:before{display:none}
-.destination-hero{background-image:linear-gradient(90deg,rgba(48,17,23,.88),rgba(48,17,23,.38)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;background-position:center 42%;background-size:cover}
+.destination-hero{background-image:linear-gradient(125deg,rgba(33,58,48,.98),rgba(53,85,72,.88)),radial-gradient(circle at 78% 28%,rgba(168,142,101,.22),transparent 34%)!important;background-position:center 42%;background-size:cover}
 .about-hero{background-image:linear-gradient(90deg,rgba(48,17,23,.9),rgba(48,17,23,.45)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/ASTANA-MANGKUBUMI-by-Raymond-L.jpg")!important;background-position:center 50%;background-size:cover}
-.guide-hero{background-image:linear-gradient(90deg,rgba(48,17,23,.9),rgba(48,17,23,.42)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;background-position:center;background-size:cover}
+.guide-hero{background-image:linear-gradient(125deg,rgba(33,58,48,.98),rgba(53,85,72,.88)),radial-gradient(circle at 78% 28%,rgba(168,142,101,.22),transparent 34%)!important;background-position:center;background-size:cover}
 
 /* Greenpeace reference translated into HPI's own regional editorial storytelling */
 .field-focus{padding:104px 10%;background:#F7F3EC}
@@ -647,7 +647,7 @@ body{background:var(--cream);color:var(--ink);font-family:var(--sans)}
     padding: 64px 7% 102px;
     color: #fff;
     background-color: var(--wine-dark) !important;
-    background-image: url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg") !important;
+    background-image:linear-gradient(135deg,#263F34,#355548 55%,#71846F)!important;
     background-position: 57% center;
     background-size: cover;
   }
@@ -1186,13 +1186,13 @@ body{background:#F5F2EA;color:#292E29}
 .page-hero-content>p:not(.eyebrow),.breadcrumb{color:rgba(248,247,238,.82)}
 .page-hero:after{color:rgba(236,240,226,.22)}
 .destination-hero{
-  background-image:linear-gradient(90deg,rgba(31,57,45,.88),rgba(39,68,54,.35)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;
+  background-image:linear-gradient(125deg,rgba(33,58,48,.98),rgba(53,85,72,.9)),radial-gradient(circle at 78% 28%,rgba(168,142,101,.22),transparent 34%)!important;
 }
 .about-hero{
   background-image:linear-gradient(90deg,rgba(31,57,45,.89),rgba(39,68,54,.4)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/ASTANA-MANGKUBUMI-by-Raymond-L.jpg")!important;
 }
 .guide-hero{
-  background-image:linear-gradient(90deg,rgba(31,57,45,.9),rgba(39,68,54,.4)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;
+  background-image:linear-gradient(125deg,rgba(33,58,48,.98),rgba(53,85,72,.9)),radial-gradient(circle at 78% 28%,rgba(168,142,101,.22),transparent 34%)!important;
 }
 .directory-heading h2 em,.about-intro h2 em,.about-copy h2 em,.organization-note h2 em,
 .guide-intro h2 em,.directory-placeholder h2 em{color:#71846F}
@@ -1255,4 +1255,78 @@ body{background:#F5F2EA;color:#292E29}
   .caption-line{background:#DCE5DA}
   .hero-actions .text-link,.light-link{color:#F8F6EF}
   .focus-grid{scrollbar-color:#AAB7A5 transparent}
+}
+
+
+/* Image-free Tanjung Puting panels: calm botanical graphics instead of the removed orangutan photo. */
+.hero:before{
+  background-image:
+    radial-gradient(ellipse at 66% 28%,rgba(245,242,234,.42) 0 1px,transparent 1.6px),
+    radial-gradient(ellipse at 74% 36%,rgba(245,242,234,.18),transparent 30%),
+    linear-gradient(145deg,#DCE5DA 0%,#AAB9A4 48%,#71846F 100%);
+  background-size:24px 24px,100% 100%,100% 100%;
+}
+.hero:after{color:rgba(38,63,52,.7)}
+@media(max-width:900px){
+  .hero{
+    background-color:#263F34!important;
+    background-image:
+      radial-gradient(circle at 82% 24%,rgba(220,229,218,.12),transparent 34%),
+      linear-gradient(135deg,#213A30,#355548 62%,#60785E)!important;
+  }
+  .hero-shade{background:linear-gradient(90deg,rgba(27,49,38,.2),rgba(27,49,38,.04))}
+}
+.destination-card:has(.card-tag){
+  background-color:#355548;
+}
+.destination-large{
+  background-image:
+    radial-gradient(ellipse at 70% 25%,rgba(220,229,218,.2),transparent 36%),
+    linear-gradient(145deg,#71846F,#355548 75%);
+}
+.focus-panel-placeholder{
+  background:
+    radial-gradient(circle at 75% 25%,rgba(220,229,218,.24),transparent 34%),
+    linear-gradient(145deg,#71846F,#355548 70%,#263F34);
+}
+.story-photo-placeholder{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:space-between;
+  padding:25px;
+  color:#F5F2EA;
+  background:
+    radial-gradient(circle at 72% 28%,rgba(220,229,218,.22),transparent 34%),
+    linear-gradient(135deg,#263F34,#60785E 58%,#AAB9A4);
+}
+.story-visual-label{
+  font:600 9px/1.8 var(--sans);
+  letter-spacing:.18em;
+  color:#E7EADF;
+}
+.story-visual-label strong{
+  font:500 clamp(24px,3.5vw,36px)/1.05 var(--serif);
+  letter-spacing:-.02em;
+  color:#fff;
+}
+.story-visual-mark{
+  font:600 8px var(--sans);
+  letter-spacing:.2em;
+  color:rgba(255,255,255,.76);
+}
+.directory-image-placeholder{
+  display:block;
+  background:
+    radial-gradient(circle at 72% 28%,rgba(220,229,218,.22),transparent 34%),
+    linear-gradient(145deg,#71846F,#355548 68%,#263F34);
+}
+.directory-image-placeholder:after{
+  content:"TAMAN NASIONAL / 01";
+  position:absolute;
+  left:18px;
+  bottom:18px;
+  color:#F5F2EA;
+  font:600 9px var(--sans);
+  letter-spacing:.16em;
 }
