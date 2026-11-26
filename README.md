@@ -32,7 +32,7 @@ Workflow deploy sudah tersedia di `.github/workflows/pages.yml`. Pengaturan Page
 3. Pada **Build and deployment → Source**, pilih **GitHub Actions**.
 4. Setelah tersimpan, buka tab **Actions**, pilih workflow **Deploy HPI website to GitHub Pages**, lalu jalankan **Run workflow** pada branch `main` (atau lakukan push baru).
 
-Setelah deployment berhasil, alamat publik project site adalah:
+Alamat publik project site (gunakan seluruh alamat, termasuk path repository) adalah:
 https://adiedieeees-create.github.io/HPI-Kotawaringin-barat/
 
 ## Catatan pengelolaan konten
