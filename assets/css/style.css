@@ -471,3 +471,39 @@ body{background:var(--cream);color:var(--ink);font-family:var(--sans)}
 .destination-hero{background-image:linear-gradient(90deg,rgba(48,17,23,.88),rgba(48,17,23,.38)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;background-position:center 42%;background-size:cover}
 .about-hero{background-image:linear-gradient(90deg,rgba(48,17,23,.9),rgba(48,17,23,.45)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/ASTANA-MANGKUBUMI-by-Raymond-L.jpg")!important;background-position:center 50%;background-size:cover}
 .guide-hero{background-image:linear-gradient(90deg,rgba(48,17,23,.9),rgba(48,17,23,.42)),url("https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg")!important;background-position:center;background-size:cover}
+
+/* Greenpeace reference translated into HPI's own regional editorial storytelling */
+.field-focus{padding:104px 10%;background:#F7F3EC}
+.field-focus-head,.stories-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:34px}
+.field-focus-head h2,.stories-heading h2{font:500 clamp(40px,4.8vw,64px)/1.02 var(--serif);letter-spacing:-.045em;color:var(--wine-dark);margin:0}
+.field-focus-head h2 em,.stories-heading h2 em{color:var(--wine)}
+.field-focus-head>p{max-width:330px;font:400 11px/1.95 var(--sans);color:#6B625A;margin:0 0 4px}
+.focus-grid{display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:12px}
+.focus-panel{height:440px;position:relative;overflow:hidden;background:#3f1a21;color:white;display:flex;flex-direction:column;justify-content:space-between;padding:23px}
+.focus-panel:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(24,12,14,.82),rgba(24,12,14,.05) 72%)}
+.focus-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.focus-panel:hover img{transform:scale(1.045)}
+.focus-index,.focus-title,.focus-action{position:relative;z-index:1}
+.focus-index{font:600 8px var(--sans);letter-spacing:.17em;color:#F1D9DC}
+.focus-title{font:500 clamp(28px,3vw,42px)/.99 var(--serif);letter-spacing:-.035em;margin-top:auto;margin-bottom:19px}
+.focus-action{border-top:1px solid rgba(255,255,255,.4);padding-top:13px;font:600 9px var(--sans);letter-spacing:.08em;display:flex;justify-content:space-between}
+.focus-action b{color:#E7C99C}
+.field-stories{padding:104px 10%;background:#EDE6DC}
+.stories-heading{margin-bottom:42px}
+.stories-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:55px}
+.story-photo{display:block;height:340px;overflow:hidden;background:#d7c9bd}
+.story-photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.story-photo:hover img{transform:scale(1.03)}
+.story-copy{padding:23px 0 0;max-width:650px}
+.story-meta{font:600 8px var(--sans);letter-spacing:.17em;color:var(--wine)}
+.story-copy h3{font:500 clamp(27px,3vw,38px)/1.08 var(--serif);letter-spacing:-.025em;color:var(--wine-dark);margin:12px 0}
+.story-copy h3 a:hover,.story-list h3 a:hover{color:var(--wine)}
+.story-copy p,.story-list p{font:400 10px/1.95 var(--sans);color:#6B625A}
+.story-read,.story-list article>a{display:inline-block;margin-top:8px;color:var(--wine);font:600 9px var(--sans);letter-spacing:.06em}
+.story-read span{padding-left:8px}
+.story-list{border-top:1px solid #CFC2B5}
+.story-list article{padding:22px 0;border-bottom:1px solid #CFC2B5}
+.story-list h3{font:500 23px/1.1 var(--serif);color:var(--wine-dark);margin:10px 0}
+.story-list p{margin:0}
+@media(max-width:900px){.field-focus,.field-stories{padding:78px 7%}.focus-grid{grid-template-columns:1fr 1fr}.focus-panel:first-child{grid-column:span 2;height:360px}.focus-panel:not(:first-child){height:310px}.stories-layout{gap:30px}}
+@media(max-width:680px){.field-focus,.field-stories{padding:70px 6%}.field-focus-head,.stories-heading{display:block}.field-focus-head h2,.stories-heading h2{font-size:43px}.field-focus-head>p{margin-top:17px}.focus-grid{grid-template-columns:1fr}.focus-panel:first-child,.focus-panel:not(:first-child){grid-column:auto;height:340px}.stories-heading .text-link{display:inline-block;margin-top:18px}.stories-layout{grid-template-columns:1fr;gap:25px}.story-photo{height:250px}.story-copy h3{font-size:30px}.story-list h3{font-size:22px}}
