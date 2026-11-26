@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adiedieeees-create.github.io/HPI-Kotawaringin-barat/sitemap.xml
