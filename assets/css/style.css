@@ -1259,78 +1259,8 @@ body{background:#F5F2EA;color:#292E29}
 
 
 
-/* Tanjung Puting imagery: show the river journey instead of empty gradients. */
-.hero:before{
-  background-image:
-    linear-gradient(90deg,rgba(25,45,35,.76) 0%,rgba(25,45,35,.34) 58%,rgba(25,45,35,.08) 100%),
-    url("https://mmc2.kalteng.go.id/files/berita/21072025115824_2.jpeg");
-  background-size:cover;
-  background-position:center 48%;
-}
-.destination-large img,
-.focus-panel img,
-.story-photo img,
-.directory-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  position:absolute;
-  inset:0;
-}
-.destination-large img{object-position:center 48%}
-.focus-panel:first-child img{object-position:center 50%}
-.story-photo img{object-position:center 48%}
-.directory-image img{object-position:center 48%}
-@media(max-width:900px){
-  .hero{
-    background-color:#263F34!important;
-    background-image:
-      linear-gradient(90deg,rgba(27,49,38,.78),rgba(27,49,38,.36)),
-      url("https://mmc2.kalteng.go.id/files/berita/21072025115824_2.jpeg")!important;
-    background-size:cover!important;
-    background-position:center 48%!important;
-  }
-  .hero-shade{background:linear-gradient(0deg,rgba(25,43,34,.44),transparent 70%)}
-}
 
-
-/* Blend removed-photo areas into their actual page surfaces; no empty green panels. */
-.hero:before{
-  display:none!important;
-  content:none!important;
-  background:none!important;
-}
-.hero{
-  background:#F5F2EA!important;
-  background-image:none!important;
-  color:#292E29!important;
-}
-.hero-shade{display:none!important}
-.hero h1{color:#263E33!important}
-.hero h1 em{color:#71846F!important}
-.hero .eyebrow,.hero-content:before{color:#60785E!important}
-.hero-description{color:#666A60!important}
-.hero .text-link,.hero .light-link{color:#486A55!important}
-.hero-caption,.hero-index{color:#72746B!important}
-.hero-index strong{color:#60785E!important}
-.caption-line{background:#A88E65!important}
-.destination-large{
-  background:#EBEAE1!important;
-  background-image:none!important;
-}
-.destination-large>img{display:none!important}
-.destination-large .card-overlay{display:none!important}
-.destination-large:after{display:none!important}
-@media(max-width:900px){
-  .hero{
-    background:#F5F2EA!important;
-    background-image:none!important;
-  }
-  .hero-shade{display:none!important}
-}
-
-
-/* CLEAN HERO — no image placeholder, frame, pattern or empty destination tile. */
+/* USER-OWNED IMAGE AREAS — deliberately blank, ready for the site owner to populate. */
 .hero,
 .hero:before,
 .hero::before,
@@ -1341,28 +1271,17 @@ body{background:#F5F2EA;color:#292E29}
   box-shadow:none!important;
 }
 .hero:before,
-.hero::before{
+.hero::before,
+.hero:after,
+.hero::after,
+.hero-shade{
   content:none!important;
   display:none!important;
-  position:absolute!important;
-  width:0!important;
-  height:0!important;
 }
-.hero:after,
-.hero::after{content:none!important;display:none!important}
 .hero{
   background:#F5F2EA!important;
   background-color:#F5F2EA!important;
   color:#292E29!important;
-  display:block!important;
-  min-height:560px!important;
-  height:auto!important;
-  max-height:none!important;
-  padding:clamp(92px,11vw,150px) 10% 120px!important;
-}
-.hero-content{
-  max-width:850px!important;
-  margin:0!important;
 }
 .hero h1{color:#263E33!important}
 .hero h1 em{color:#71846F!important}
@@ -1373,28 +1292,30 @@ body{background:#F5F2EA;color:#292E29}
 .hero-index strong{color:#60785E!important}
 .caption-line{background:#A88E65!important}
 
-/* The old empty card is removed from markup; the remaining two destination cards share the row. */
-.destination-grid{
-  grid-template-columns:repeat(2,minmax(0,1fr))!important;
-  grid-template-rows:380px!important;
+/* Empty image slots use the same flat color as each section — no gradient, pattern or overlay. */
+.focus-panel-placeholder{
+  background:#EBEAE1!important;
+  background-image:none!important;
 }
-.destination-grid .destination-card{min-height:0}
-.destination-grid .destination-large{grid-row:auto!important}
+.focus-panel-placeholder:before,
+.focus-panel-placeholder:after{content:none!important;display:none!important}
+.story-photo-placeholder{
+  background:#F5F2EA!important;
+  background-image:none!important;
+}
+.directory-image-placeholder{
+  background:#F0EBE3!important;
+  background-image:none!important;
+}
 @media(max-width:900px){
   .hero{
     background:#F5F2EA!important;
     background-color:#F5F2EA!important;
     background-image:none!important;
-    min-height:0!important;
-    padding:76px 7% 96px!important;
   }
-  .hero-content{max-width:100%!important}
-  .hero h1{font-size:clamp(42px,9vw,58px)!important}
-  .hero-caption{left:7%;bottom:26px}
-  .hero-index{right:7%;bottom:23px}
-  .destination-grid{
-    display:flex!important;
-    grid-template-columns:none!important;
-    grid-template-rows:none!important;
+  .hero:before,.hero::before,.hero:after,.hero::after,.hero-shade{
+    content:none!important;
+    display:none!important;
+    background:none!important;
   }
 }
