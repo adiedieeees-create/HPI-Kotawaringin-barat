@@ -1422,3 +1422,43 @@ body{background:#F5F2EA;color:#292E29}
     background:#FFFFFF!important;
   }
 }
+
+
+/* Footer treatment coordinated with the white header and official HPI mark. */
+.site-footer{
+  background:#FFFFFF!important;
+  color:#263E33!important;
+  border-top:1px solid #E5E7DF!important;
+  padding:34px 6.5%!important;
+}
+.footer-brand{gap:14px!important}
+.footer-brand .footer-logo{
+  display:block;
+  flex:0 0 62px;
+  width:62px;
+  height:62px;
+  object-fit:contain;
+  object-position:center;
+  background:transparent;
+  border:0;
+}
+.footer-brand .brand-copy strong{color:#294638!important}
+.footer-brand .brand-copy small{color:#77786F!important}
+.site-footer>p{color:#60785E!important}
+.site-footer .copyright{color:#77786F!important}
+@media(max-width:680px){
+  .site-footer{
+    background:#FFFFFF!important;
+    padding:28px 7% calc(28px + env(safe-area-inset-bottom))!important;
+    gap:16px!important;
+  }
+  .footer-brand .footer-logo{
+    flex-basis:54px;
+    width:54px;
+    height:54px;
+  }
+  .footer-brand .brand-copy strong{color:#294638!important}
+  .footer-brand .brand-copy small{color:#77786F!important}
+  .site-footer>p{color:#60785E!important}
+  .site-footer .copyright{color:#77786F!important}
+}
