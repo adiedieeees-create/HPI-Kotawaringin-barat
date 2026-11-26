@@ -4,22 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123b32">
-  <meta name="description" content="HPI Kotawaringin Barat — informasi organisasi pramuwisata, pemandu wisata lokal, dan destinasi unggulan Kalimantan Tengah.">
+  <meta name="description" content="HPI Kotawaringin Barat — informasi organisasi pramuwisata, layanan pemandu wisata lokal, dan inspirasi destinasi wisata Kalimantan Tengah.">
+  <meta property="og:title" content="HPI Kotawaringin Barat | Jelajah Bersama Pemandu Lokal">
+  <meta property="og:description" content="Kenali pramuwisata lokal dan jelajahi alam serta budaya Kotawaringin Barat, Kalimantan Tengah.">
+  <meta property="og:type" content="website">
   <title>HPI Kotawaringin Barat | Jelajah Bersama Pemandu Lokal</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://web.visitkotawaringinbarat.id">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div class="announcement">Mengenal Kalimantan Tengah lebih dekat bersama pemandu wisata lokal</div>
   <header class="site-header">
-    <a class="brand" href="#beranda" aria-label="HPI Kotawaringin Barat, beranda">
+    <a class="brand" href="index.html" aria-label="HPI Kotawaringin Barat, beranda">
       <span class="brand-mark">HPI</span><span class="brand-copy"><strong>HPI KOTAWARINGIN BARAT</strong><small>Himpunan Pramuwisata Indonesia</small></span>
     </a>
-    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="main-nav" aria-label="Navigasi utama">
-      <a href="#beranda">Beranda</a><a href="#tentang">Tentang HPI</a><a href="#destinasi">Destinasi</a><a href="#layanan">Layanan</a><a href="#panduan">Pemandu</a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-navigation" aria-label="Navigasi utama">
+      <a class="active" href="index.html" aria-current="page">Beranda</a>
+      <a href="tentang.html">Tentang HPI</a>
+      <a href="destinasi.html">Destinasi</a>
+      <a href="#layanan">Layanan</a>
+      <a href="pemandu.html">Pemandu Wisata</a>
       <a class="nav-contact" href="#kontak">Hubungi Kami <span>↗</span></a>
     </nav>
   </header>
@@ -31,9 +40,9 @@
         <p class="eyebrow light">HOSPITALITY • CULTURE • NATURE</p>
         <h1>Temukan cerita<br>di setiap <em>perjalanan.</em></h1>
         <p class="hero-description">Jelajahi keindahan alam, kekayaan budaya, dan keramahan Kotawaringin Barat bersama pramuwisata lokal yang mengenal setiap sudutnya.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#destinasi">Jelajahi Destinasi <span>↗</span></a><a class="text-link light-link" href="#tentang">Kenali organisasi kami <span>→</span></a></div>
+        <div class="hero-actions"><a class="button button-primary" href="destinasi.html">Jelajahi Destinasi <span>↗</span></a><a class="text-link light-link" href="tentang.html">Kenali organisasi kami <span>→</span></a></div>
       </div>
-      <div class="hero-caption"><span class="caption-line"></span><span>TANJUNG PUTING · KALIMANTAN TENGAH</span></div>
+      <div class="hero-caption"><span class="caption-line"></span><span>TAMAN NASIONAL TANJUNG PUTING · KALIMANTAN TENGAH</span></div>
       <div class="hero-index"><strong>01</strong><span>/</span> DESTINASI ALAM INDONESIA</div>
     </section>
 
@@ -42,64 +51,79 @@
       <div class="intro-main">
         <p class="eyebrow">HIMPUNAN PRAMUWISATA INDONESIA</p>
         <h2>Menghubungkan wisatawan dengan <em>keaslian</em> pengalaman lokal.</h2>
-        <div class="intro-bottom"><p>HPI Kotawaringin Barat merupakan bagian dari komunitas pramuwisata yang berkomitmen mendukung pariwisata berkualitas, pelayanan profesional, serta pengenalan potensi alam dan budaya daerah.</p><a class="text-link" href="#kontak">Kenali lebih dekat <span>→</span></a></div>
+        <div class="intro-bottom"><p>HPI Kotawaringin Barat hadir sebagai ruang informasi dan pengenalan pramuwisata lokal, sekaligus mendukung promosi potensi alam, budaya, dan pengalaman wisata daerah.</p><a class="text-link" href="tentang.html">Tentang HPI <span>→</span></a></div>
       </div>
       <div class="intro-stamp"><span>LOCAL</span><strong>GUIDE</strong><span>LOCAL STORY</span></div>
     </section>
 
     <section class="destinations section-pad" id="destinasi">
       <div class="section-heading">
-        <div><p class="eyebrow">JELAJAHI KOTAWARINGIN BARAT</p><h2>Destinasi pilihan<br><em>untuk dijelajahi.</em></h2></div>
-        <p class="heading-note">Dari hutan tropis yang menjadi rumah satwa endemik hingga pesisir yang menenangkan, temukan sisi istimewa Bumi Marunting Batu Aji.</p>
+        <div><p class="eyebrow">JELAJAHI KOTAWARINGIN BARAT</p><h2>Alam, budaya, dan<br><em>cerita yang menanti.</em></h2></div>
+        <p class="heading-note">Kotawaringin Barat memiliki beragam pengalaman, mulai dari susur sungai di hutan tropis hingga jejak sejarah Kesultanan Kutaringin dan budaya Dayak.</p>
       </div>
       <div class="destination-grid">
         <article class="destination-card destination-large">
-          <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=85" alt="Hutan tropis Kalimantan" loading="lazy">
-          <div class="card-overlay"><span class="card-tag">WISATA ALAM</span><h3>Taman Nasional<br>Tanjung Puting</h3><p>Jelajah sungai dan hutan tropis, habitat orangutan Kalimantan.</p><a href="#kontak" aria-label="Tanyakan perjalanan ke Tanjung Puting">Jelajahi <span>↗</span></a></div>
+          <img src="https://web.visitkotawaringinbarat.id/wp-content/uploads/2020/07/Orangutan-Tanjung-Puting.jpg" alt="Orangutan Kalimantan di Taman Nasional Tanjung Puting" loading="lazy">
+          <div class="card-overlay"><span class="card-tag">WISATA ALAM & KONSERVASI</span><h3>Taman Nasional<br>Tanjung Puting</h3><p>Susuri Sungai Sekonyer dan kenali habitat orangutan Kalimantan.</p><a href="destinasi.html#tanjung-puting">Lihat destinasi <span>↗</span></a></div>
         </article>
         <article class="destination-card">
-          <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85" alt="Pemandangan pantai tropis" loading="lazy">
-          <div class="card-overlay"><span class="card-tag">WISATA BAHARI</span><h3>Pantai Kubu</h3><p>Suasana pesisir dan panorama matahari terbenam.</p><a href="#kontak">Jelajahi <span>↗</span></a></div>
+          <img src="https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/ISKUN.jpg" alt="Bangunan bersejarah Istana Kuning" loading="lazy">
+          <div class="card-overlay"><span class="card-tag">WISATA SEJARAH</span><h3>Istana Kuning</h3><p>Menelusuri peninggalan sejarah Kerajaan Kutaringin.</p><a href="destinasi.html#istana-kuning">Lihat destinasi <span>↗</span></a></div>
         </article>
         <article class="destination-card">
-          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=85" alt="Lanskap perairan" loading="lazy">
-          <div class="card-overlay"><span class="card-tag">WISATA BAHARI</span><h3>Tanjung Keluang</h3><p>Pesona pantai dan pengalaman alam pesisir.</p><a href="#kontak">Jelajahi <span>↗</span></a></div>
-        </article>
-        <article class="destination-card">
-          <img src="https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&w=1000&q=85" alt="Rumah tradisional dan budaya" loading="lazy">
-          <div class="card-overlay"><span class="card-tag">WISATA BUDAYA</span><h3>Pasir Panjang</h3><p>Mengenal kehidupan dan warisan budaya masyarakat lokal.</p><a href="#kontak">Jelajahi <span>↗</span></a></div>
+          <img src="https://web.visitkotawaringinbarat.id/wp-content/uploads/2024/06/Kategori-City-Tour.png" alt="Arsitektur Rumah Betang Pasir Panjang" loading="lazy">
+          <div class="card-overlay"><span class="card-tag">WISATA BUDAYA</span><h3>Rumah Betang</h3><p>Mengenal arsitektur dan nilai kebersamaan masyarakat Dayak.</p><a href="destinasi.html#rumah-betang">Lihat destinasi <span>↗</span></a></div>
         </article>
       </div>
-      <p class="content-note">Catatan: informasi akses, status kunjungan, dan detail setiap destinasi perlu dikonfirmasi sebelum perjalanan.</p>
+      <div class="section-link-row"><span>Temukan lebih banyak pilihan wisata</span><a class="text-link" href="destinasi.html">Jelajahi direktori destinasi <span>→</span></a></div>
     </section>
 
     <section class="services section-pad" id="layanan">
-      <div class="section-heading light-heading"><div><p class="eyebrow light">PENGALAMAN YANG KAMI DUKUNG</p><h2>Perjalanan lebih bermakna<br><em>bersama pemandu lokal.</em></h2></div><p class="heading-note">Dapatkan pengalaman yang dirancang sesuai minat, waktu, dan kebutuhan perjalanan Anda.</p></div>
+      <div class="section-heading light-heading"><div><p class="eyebrow light">PENGALAMAN YANG KAMI DUKUNG</p><h2>Perjalanan lebih bermakna<br><em>bersama pemandu lokal.</em></h2></div><p class="heading-note">Rencanakan perjalanan sesuai minat, waktu, dan kebutuhan. Informasi ketersediaan layanan dikonfirmasi langsung dengan pemandu.</p></div>
       <div class="service-list">
-        <article><span class="service-no">01</span><div><h3>Nature & Wildlife Tour</h3><p>Menjelajahi kekayaan hutan tropis, sungai, dan keanekaragaman hayati.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-no">02</span><div><h3>Culture & Heritage Tour</h3><p>Mengenal tradisi, sejarah, kuliner, dan kehidupan masyarakat setempat.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-no">03</span><div><h3>City & Custom Tour</h3><p>Tur kota dan rencana perjalanan yang disesuaikan dengan kebutuhan Anda.</p></div><span class="service-arrow">↗</span></article>
+        <article><span class="service-no">01</span><div><h3>Nature & Wildlife Tour</h3><p>Menjelajahi kekayaan hutan tropis, sungai, kawasan konservasi, dan keanekaragaman hayati.</p></div><span class="service-arrow">↗</span></article>
+        <article><span class="service-no">02</span><div><h3>Culture & Heritage Tour</h3><p>Mengenal tradisi, sejarah, arsitektur, kuliner, dan kehidupan masyarakat setempat.</p></div><span class="service-arrow">↗</span></article>
+        <article><span class="service-no">03</span><div><h3>City & Custom Tour</h3><p>Tur kota dan rencana perjalanan yang disesuaikan dengan kebutuhan wisatawan.</p></div><span class="service-arrow">↗</span></article>
       </div>
+      <p class="service-footnote">Ragam layanan di atas merupakan kategori pengalaman wisata. Detail paket, jadwal, biaya, dan ketersediaan pemandu perlu dikonfirmasi sebelum pemesanan.</p>
     </section>
 
     <section class="guide-section section-wrap" id="panduan">
-      <div class="guide-image"><img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85" alt="Wisatawan menjelajahi alam" loading="lazy"><span class="image-note">EXPLORE WITH LOCAL INSIGHT</span></div>
-      <div class="guide-copy"><p class="eyebrow">KENALI PARA PRAMUWISATA</p><h2>Cerita lokal, disampaikan oleh <em>orang lokal.</em></h2><p>Pramuwisata berperan penting dalam menghadirkan perjalanan yang informatif, aman, dan berkesan. Temukan pemandu yang sesuai dengan kebutuhan perjalanan Anda melalui jaringan HPI Kotawaringin Barat.</p><div class="guide-points"><span>01 <b>Pengetahuan destinasi lokal</b></span><span>02 <b>Komunikasi dan pelayanan wisata</b></span><span>03 <b>Pengalaman sesuai minat perjalanan</b></span></div><a class="button button-dark" href="#kontak">Tanyakan pemandu wisata <span>↗</span></a></div>
+      <div class="guide-image"><img src="https://web.visitkotawaringinbarat.id/wp-content/uploads/2021/02/ASTANA-MANGKUBUMI-by-Raymond-L.jpg" alt="Bangunan bersejarah di Kotawaringin Barat" loading="lazy"><span class="image-note">EXPLORE WITH LOCAL INSIGHT</span></div>
+      <div class="guide-copy"><p class="eyebrow">KENALI PROFESI PRAMUWISATA</p><h2>Cerita lokal, disampaikan oleh <em>orang lokal.</em></h2><p>Pramuwisata membantu wisatawan memahami tempat yang dikunjungi, mengenal konteks budaya, dan menjalani perjalanan dengan informasi yang tepat. HPI menjadi wadah untuk memperkuat profesionalisme dan jejaring pramuwisata.</p><div class="guide-points"><span>01 <b>Pengetahuan destinasi dan budaya lokal</b></span><span>02 <b>Komunikasi dan pelayanan wisata</b></span><span>03 <b>Pengalaman sesuai minat perjalanan</b></span></div><a class="button button-dark" href="pemandu.html">Tentang pemandu wisata <span>↗</span></a></div>
+    </section>
+
+    <section class="experience-strip">
+      <div class="experience-title"><p class="eyebrow">LEBIH DARI SEKADAR BERKUNJUNG</p><h2>Kenali tempatnya.<br><em>Pahami ceritanya.</em></h2></div>
+      <div class="experience-item"><span class="experience-icon">01</span><div><strong>Alam yang terjaga</strong><p>Kenali ekosistem hutan, sungai, dan pesisir melalui wisata yang bertanggung jawab.</p></div></div>
+      <div class="experience-item"><span class="experience-icon">02</span><div><strong>Warisan budaya</strong><p>Hargai sejarah, tradisi, dan pengetahuan masyarakat setempat.</p></div></div>
+      <div class="experience-item"><span class="experience-icon">03</span><div><strong>Wawasan lokal</strong><p>Dapatkan konteks dan cerita dari orang yang mengenal daerahnya.</p></div></div>
+    </section>
+
+    <section class="faq-section section-pad" id="faq">
+      <div class="section-heading"><div><p class="eyebrow">INFORMASI PENGUNJUNG</p><h2>Hal yang sering<br><em>ditanyakan.</em></h2></div><p class="heading-note">Beberapa hal yang perlu diketahui sebelum merencanakan perjalanan ke Kotawaringin Barat.</p></div>
+      <div class="faq-list">
+        <details><summary>Apa destinasi wisata unggulan di Kotawaringin Barat?<span>+</span></summary><p>Taman Nasional Tanjung Puting, Taman Wisata Alam Tanjung Keluang, Pantai Kubu, Istana Kuning, Rumah Betang Pasir Panjang, dan sejumlah destinasi alam maupun budaya lainnya termasuk dalam pilihan wisata daerah.</p></details>
+        <details><summary>Bagaimana cara mencari pemandu wisata lokal?<span>+</span></summary><p>Gunakan halaman Pemandu Wisata untuk mengetahui informasi direktori. Data profil dan kontak anggota akan ditampilkan setelah diverifikasi oleh pengurus HPI Kotawaringin Barat.</p></details>
+        <details><summary>Apakah informasi jam buka dan biaya masuk sudah tersedia?<span>+</span></summary><p>Jam kunjungan, tarif, akses, dan fasilitas dapat berubah mengikuti kebijakan pengelola. Pastikan memeriksa informasi terbaru melalui pengelola destinasi atau portal resmi pariwisata sebelum berangkat.</p></details>
+        <details><summary>Di mana saya dapat menemukan informasi wisata resmi daerah?<span>+</span></summary><p>Portal Visit Kotawaringin Barat yang dikelola Dinas Pariwisata Kabupaten Kotawaringin Barat menyediakan informasi destinasi dan layanan wisata daerah.</p></details>
+      </div>
     </section>
 
     <section class="join-banner">
       <div><p class="eyebrow light">BERSAMA MEMAJUKAN PARIWISATA DAERAH</p><h2>Kenali daerah kami.<br><em>Rasakan keramahannya.</em></h2></div>
-      <a class="button button-outline" href="#kontak">Terhubung dengan HPI <span>↗</span></a>
+      <a class="button button-outline" href="destinasi.html">Mulai jelajah <span>↗</span></a>
     </section>
 
     <section class="contact section-pad" id="kontak">
-      <div class="contact-heading"><p class="eyebrow">MULAI RENCANAKAN PERJALANAN</p><h2>Ada rencana<br>menjelajah <em>Kobar?</em></h2><p>Hubungi HPI Kotawaringin Barat untuk informasi organisasi, layanan pramuwisata, dan potensi wisata lokal.</p></div>
-      <div class="contact-panel"><span class="contact-kicker">HUBUNGI KAMI</span><h3>Mari bicarakan<br>perjalanan Anda.</h3><p>Silakan hubungi sekretariat melalui kanal resmi HPI Kotawaringin Barat.</p><a class="contact-email" href="mailto:info@hpikotawaringinbarat.or.id">Email sekretariat <span>↗</span></a><div class="contact-divider"></div><p class="small-note">Nomor WhatsApp, email aktif, alamat sekretariat, dan media sosial resmi akan ditambahkan setelah dikonfirmasi pengurus.</p></div>
+      <div class="contact-heading"><p class="eyebrow">TERHUBUNG DENGAN KAMI</p><h2>Mulai dari<br>rasa <em>ingin tahu.</em></h2><p>Untuk informasi resmi mengenai destinasi, akses, dan layanan pariwisata daerah, kunjungi kanal informasi pariwisata Kotawaringin Barat.</p></div>
+      <div class="contact-panel"><span class="contact-kicker">PORTAL PARIWISATA DAERAH</span><h3>Jelajahi informasi<br>wisata Kotawaringin Barat.</h3><p>Temukan referensi destinasi, informasi perjalanan, dan kanal layanan publik dari Dinas Pariwisata Kabupaten Kotawaringin Barat.</p><a class="contact-email" href="https://web.visitkotawaringinbarat.id/" target="_blank" rel="noopener noreferrer">Visit Kotawaringin Barat <span>↗</span></a><div class="contact-divider"></div><p class="small-note">Kanal kontak resmi HPI Kotawaringin Barat akan ditambahkan setelah data sekretariat dikonfirmasi oleh pengurus.</p></div>
     </section>
+    <p class="source-note">Referensi informasi destinasi: portal resmi Visit Kotawaringin Barat dan Dinas Pariwisata Kabupaten Kotawaringin Barat. Foto destinasi ditautkan ke portal Visit Kotawaringin Barat.</p>
   </main>
 
   <footer class="site-footer">
-    <a class="brand footer-brand" href="#beranda"><span class="brand-mark">HPI</span><span class="brand-copy"><strong>HPI KOTAWARINGIN BARAT</strong><small>Himpunan Pramuwisata Indonesia</small></span></a>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">HPI</span><span class="brand-copy"><strong>HPI KOTAWARINGIN BARAT</strong><small>Himpunan Pramuwisata Indonesia</small></span></a>
     <p>Merawat cerita lokal, menyambut dunia.</p><span class="copyright">© <span id="year"></span> HPI Kotawaringin Barat</span>
   </footer>
   <script src="assets/js/main.js"></script>
