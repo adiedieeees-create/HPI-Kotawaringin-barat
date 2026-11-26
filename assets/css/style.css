@@ -1382,3 +1382,43 @@ body{background:#F5F2EA;color:#292E29}
     height:39px;
   }
 }
+
+
+/* Header polish: pure white surface and a clearer, larger HPI mark. */
+.site-header{
+  background:#FFFFFF!important;
+  background-color:#FFFFFF!important;
+  height:96px!important;
+  border-bottom:1px solid #E9E9E4!important;
+  backdrop-filter:none!important;
+}
+.site-header .brand-logo{
+  width:62px!important;
+  height:62px!important;
+  flex:0 0 62px!important;
+  object-fit:contain!important;
+  background:transparent!important;
+}
+.site-header .brand-copy strong{color:#294638!important}
+.site-header .brand-copy small{color:#77786F!important}
+.site-header .menu-toggle{
+  border-color:#E0E3DC!important;
+  background:#FFFFFF!important;
+}
+.site-header .menu-toggle span{background:#355548!important}
+.site-header .main-nav{background:#FFFFFF!important}
+@media(max-width:680px){
+  .site-header{
+    height:86px!important;
+    background:#FFFFFF!important;
+  }
+  .site-header .brand-logo{
+    width:54px!important;
+    height:54px!important;
+    flex-basis:54px!important;
+  }
+  .site-header .main-nav{
+    top:86px!important;
+    background:#FFFFFF!important;
+  }
+}
