@@ -1462,3 +1462,67 @@ body{background:#F5F2EA;color:#292E29}
   .site-footer>p{color:#60785E!important}
   .site-footer .copyright{color:#77786F!important}
 }
+
+
+/* ABOUT PAGE HERO — strengthen text contrast against the house photograph. */
+.about-hero{
+  isolation:isolate;
+  background-position:center 48%!important;
+}
+.about-hero .page-hero-shade{
+  z-index:0;
+  background:
+    linear-gradient(90deg,
+      rgba(8,31,23,.96) 0%,
+      rgba(12,43,32,.91) 38%,
+      rgba(16,48,36,.76) 66%,
+      rgba(16,48,36,.42) 100%)!important;
+}
+.about-hero .page-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:850px!important;
+  text-shadow:0 2px 18px rgba(0,0,0,.24);
+}
+.about-hero .page-hero-content .eyebrow{
+  color:#F0D9A8!important;
+  font-weight:700;
+  text-shadow:0 1px 8px rgba(0,0,0,.4);
+}
+.about-hero h1{
+  color:#FFFDF5!important;
+  text-shadow:0 3px 24px rgba(0,0,0,.42);
+}
+.about-hero h1 em{
+  color:#F0D9A8!important;
+}
+.about-hero .page-hero-content>p:not(.eyebrow){
+  color:#FFFFFF!important;
+  font-size:clamp(14px,1.15vw,17px)!important;
+  line-height:1.85!important;
+  font-weight:500;
+  text-shadow:0 2px 12px rgba(0,0,0,.65);
+}
+.about-hero .breadcrumb{
+  color:rgba(255,255,255,.94)!important;
+  font-size:11px!important;
+  font-weight:600;
+  text-shadow:0 1px 8px rgba(0,0,0,.55);
+}
+.about-hero .breadcrumb a{color:#F0D9A8!important}
+.about-hero:after{
+  color:rgba(255,253,245,.56)!important;
+  text-shadow:0 1px 8px rgba(0,0,0,.45);
+}
+@media(max-width:680px){
+  .about-hero{
+    background-position:58% center!important;
+  }
+  .about-hero .page-hero-shade{
+    background:linear-gradient(90deg,rgba(8,31,23,.96),rgba(12,43,32,.82) 72%,rgba(16,48,36,.64))!important;
+  }
+  .about-hero .page-hero-content>p:not(.eyebrow){
+    font-size:14px!important;
+  }
+  .about-hero .breadcrumb{font-size:10px!important}
+}
