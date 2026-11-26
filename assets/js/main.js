@@ -32,7 +32,7 @@ if (menuButton && navigation) {
   });
 
   // Avoid leaving the page scroll-locked when a device is rotated to desktop width.
-  const desktopLayout = window.matchMedia("(min-width: 821px)");
+  const desktopLayout = window.matchMedia("(min-width: 1001px)");
   desktopLayout.addEventListener("change", (event) => {
     if (event.matches) setNavigationOpen(false);
   });
