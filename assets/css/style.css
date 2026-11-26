@@ -1258,75 +1258,37 @@ body{background:#F5F2EA;color:#292E29}
 }
 
 
-/* Image-free Tanjung Puting panels: calm botanical graphics instead of the removed orangutan photo. */
+
+/* Tanjung Puting imagery: show the river journey instead of empty gradients. */
 .hero:before{
   background-image:
-    radial-gradient(ellipse at 66% 28%,rgba(245,242,234,.42) 0 1px,transparent 1.6px),
-    radial-gradient(ellipse at 74% 36%,rgba(245,242,234,.18),transparent 30%),
-    linear-gradient(145deg,#DCE5DA 0%,#AAB9A4 48%,#71846F 100%);
-  background-size:24px 24px,100% 100%,100% 100%;
+    linear-gradient(90deg,rgba(25,45,35,.76) 0%,rgba(25,45,35,.34) 58%,rgba(25,45,35,.08) 100%),
+    url("https://mmc2.kalteng.go.id/files/berita/21072025115824_2.jpeg");
+  background-size:cover;
+  background-position:center 48%;
 }
-.hero:after{color:rgba(38,63,52,.7)}
+.destination-large img,
+.focus-panel img,
+.story-photo img,
+.directory-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  inset:0;
+}
+.destination-large img{object-position:center 48%}
+.focus-panel:first-child img{object-position:center 50%}
+.story-photo img{object-position:center 48%}
+.directory-image img{object-position:center 48%}
 @media(max-width:900px){
   .hero{
     background-color:#263F34!important;
     background-image:
-      radial-gradient(circle at 82% 24%,rgba(220,229,218,.12),transparent 34%),
-      linear-gradient(135deg,#213A30,#355548 62%,#60785E)!important;
+      linear-gradient(90deg,rgba(27,49,38,.78),rgba(27,49,38,.36)),
+      url("https://mmc2.kalteng.go.id/files/berita/21072025115824_2.jpeg")!important;
+    background-size:cover!important;
+    background-position:center 48%!important;
   }
-  .hero-shade{background:linear-gradient(90deg,rgba(27,49,38,.2),rgba(27,49,38,.04))}
-}
-.destination-card:has(.card-tag){
-  background-color:#355548;
-}
-.destination-large{
-  background-image:
-    radial-gradient(ellipse at 70% 25%,rgba(220,229,218,.2),transparent 36%),
-    linear-gradient(145deg,#71846F,#355548 75%);
-}
-.focus-panel-placeholder{
-  background:
-    radial-gradient(circle at 75% 25%,rgba(220,229,218,.24),transparent 34%),
-    linear-gradient(145deg,#71846F,#355548 70%,#263F34);
-}
-.story-photo-placeholder{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  justify-content:space-between;
-  padding:25px;
-  color:#F5F2EA;
-  background:
-    radial-gradient(circle at 72% 28%,rgba(220,229,218,.22),transparent 34%),
-    linear-gradient(135deg,#263F34,#60785E 58%,#AAB9A4);
-}
-.story-visual-label{
-  font:600 9px/1.8 var(--sans);
-  letter-spacing:.18em;
-  color:#E7EADF;
-}
-.story-visual-label strong{
-  font:500 clamp(24px,3.5vw,36px)/1.05 var(--serif);
-  letter-spacing:-.02em;
-  color:#fff;
-}
-.story-visual-mark{
-  font:600 8px var(--sans);
-  letter-spacing:.2em;
-  color:rgba(255,255,255,.76);
-}
-.directory-image-placeholder{
-  display:block;
-  background:
-    radial-gradient(circle at 72% 28%,rgba(220,229,218,.22),transparent 34%),
-    linear-gradient(145deg,#71846F,#355548 68%,#263F34);
-}
-.directory-image-placeholder:after{
-  content:"TAMAN NASIONAL / 01";
-  position:absolute;
-  left:18px;
-  bottom:18px;
-  color:#F5F2EA;
-  font:600 9px var(--sans);
-  letter-spacing:.16em;
+  .hero-shade{background:linear-gradient(0deg,rgba(25,43,34,.44),transparent 70%)}
 }
