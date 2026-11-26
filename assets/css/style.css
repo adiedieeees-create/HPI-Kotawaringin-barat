@@ -1292,3 +1292,38 @@ body{background:#F5F2EA;color:#292E29}
   }
   .hero-shade{background:linear-gradient(0deg,rgba(25,43,34,.44),transparent 70%)}
 }
+
+
+/* Blend removed-photo areas into their actual page surfaces; no empty green panels. */
+.hero:before{
+  display:none!important;
+  content:none!important;
+  background:none!important;
+}
+.hero{
+  background:#F5F2EA!important;
+  background-image:none!important;
+  color:#292E29!important;
+}
+.hero-shade{display:none!important}
+.hero h1{color:#263E33!important}
+.hero h1 em{color:#71846F!important}
+.hero .eyebrow,.hero-content:before{color:#60785E!important}
+.hero-description{color:#666A60!important}
+.hero .text-link,.hero .light-link{color:#486A55!important}
+.hero-caption,.hero-index{color:#72746B!important}
+.hero-index strong{color:#60785E!important}
+.caption-line{background:#A88E65!important}
+.destination-large{
+  background:#EBEAE1!important;
+  background-image:none!important;
+}
+.destination-large>img{display:none!important}
+.destination-large .card-overlay{display:none!important}
+@media(max-width:900px){
+  .hero{
+    background:#F5F2EA!important;
+    background-image:none!important;
+  }
+  .hero-shade{display:none!important}
+}
